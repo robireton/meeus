@@ -1,0 +1,22 @@
+{
+  "name": "@robireton/meeus",
+  "version": "1.0.0",
+  "description": "ES6 implementations of algorithms from Astronomical Algorithms by Jean Meeus",
+  "main": "meeus.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robireton/meeus.git"
+  },
+  "author": "Rob Ireton <rob@ireton.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robireton/meeus/issues"
+  },
+  "homepage": "https://github.com/robireton/meeus#readme",
+  "dependencies": {
+    "@robireton/circle": "^1.0.0"
+  }
+}
