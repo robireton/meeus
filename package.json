@@ -1,10 +1,10 @@
 {
   "name": "@robireton/meeus",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ES6 implementations of algorithms from Astronomical Algorithms by Jean Meeus",
   "main": "meeus.mjs",
   "scripts": {
-    "test": "node --experimental-modules tests/jd.mjs"
+    "test": "node --experimental-modules tests/jd.mjs && node --experimental-modules tests/nut-obl.mjs"
   },
   "repository": {
     "type": "git",

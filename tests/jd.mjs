@@ -1,6 +1,6 @@
 import { JulianDay } from '../julian-day'
 
-console.log('Testing Started')
+console.log('JulianDay Testing Started')
 let errors = 0
 for (const testset of [
   { date: new Date(Date.UTC(2050, 9, 22, 21, 36)), gregorian: true, expected: 2470102.4 },
@@ -38,4 +38,4 @@ for (const testset of [
   }
 }
 
-console.log(`Testing Finished with ${errors} ${errors === 1 ? 'error' : 'errors'}.`)
+console.log(`JulianDay Testing Finished with ${errors} ${errors === 1 ? 'error' : 'errors'}.`)
