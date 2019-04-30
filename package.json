@@ -1,6 +1,6 @@
 {
   "name": "@robireton/meeus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ES6 implementations of algorithms from Astronomical Algorithms by Jean Meeus",
   "main": "meeus.mjs",
   "scripts": {

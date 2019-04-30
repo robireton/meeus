@@ -1,31 +1,30 @@
 import computeΔT from '@robireton/delta-t'
 
-export function JulianDay(date, gregorian = true) {
+export function JulianDay (date, gregorian = true) {
   // c.f. Chapter 7 of Astronomical Algorithms by Jean Meeus
+  // the Julian Day number for the given date
   let Y = date.getUTCFullYear()
   let M = 1 + date.getUTCMonth()
   if (M < 3) {
     Y--
-    M+=12
+    M += 12
   }
-  const D = date.getUTCDate() + date.getUTCHours()/24 + date.getUTCMinutes()/1440 + date.getUTCSeconds()/86400 + date.getUTCMilliseconds()/86400000
+  const D = date.getUTCDate() + date.getUTCHours() / 24 + date.getUTCMinutes() / 1440 + date.getUTCSeconds() / 86400 + date.getUTCMilliseconds() / 86400000
 
-  const A = Math.floor( Y / 100 )
-  const B = gregorian ? 2 - A + Math.floor( A / 4 ) : 0
+  const A = Math.floor(Y / 100)
+  const B = gregorian ? 2 - A + Math.floor(A / 4) : 0
 
-  const JD = Math.floor( 365.25 * (Y + 4716) ) + Math.floor( 30.6001 * (M + 1) ) + D + B - 1524.5
+  const JD = Math.floor(365.25 * (Y + 4716)) + Math.floor(30.6001 * (M + 1)) + D + B - 1524.5
   if (JD < 0) throw new Error('method not valid for negative Julian Day numbers')
 
   return JD // the Julian Day Number for the given date
 }
 
-
-export default function JulianEphemerisDay(date, gregorian = true) {
+export default function JulianEphemerisDay (date, gregorian = true) {
   // c.f. Chapter 9 of Astronomical Algorithms by Jean Meeus
   // the Julian Ephemeris Day number for the given date
-  return JD(date, gregorian) + computeΔT(date.getUTCFullYear(), 1+date.getUTCMonth())/86400
+  return JulianDay(date, gregorian) + computeΔT(date.getUTCFullYear(), 1 + date.getUTCMonth()) / 86400
 }
-
 
 // Number.prototype.JDtoDate = function() {
 //   if (this.valueOf() < 0) throw new Error('method not valid for negative Julian Day numbers')
