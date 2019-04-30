@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/robireton/meeus#readme",
   "dependencies": {
-    "@robireton/circle": "^1.0.0",
+    "@robireton/circle": "^1.1.0",
     "@robireton/delta-t": "^1.0.0"
   }
 }
