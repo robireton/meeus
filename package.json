@@ -1,6 +1,6 @@
 {
   "name": "@robireton/meeus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ES6 implementations of algorithms from Astronomical Algorithms by Jean Meeus",
   "main": "meeus.mjs",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/robireton/meeus#readme",
   "dependencies": {
-    "@robireton/circle": "^1.0.0"
+    "@robireton/circle": "^1.0.0",
+    "@robireton/delta-t": "^1.0.0"
   }
 }
