@@ -1,5 +1,7 @@
 import circle from '@robireton/circle'
-import dataNutation from './nutation-obliquity.json'
+import { readFileSync } from 'fs'
+
+const dataNutation = JSON.parse(readFileSync('./nutation-obliquity.json'))
 
 // c.f. Chapter 21 of Astronomical Algorithms by Jean Meeus
 export default function calculateNutationAndObliquity (JDE) {

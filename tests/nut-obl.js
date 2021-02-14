@@ -1,5 +1,5 @@
 import assert from 'assert'
-import calculateNutationAndObliquity from '../nutation-obliquity'
+import calculateNutationAndObliquity from '../nutation-obliquity.js'
 
 for (const test of [
   { JDE: 2446895.5, Δψ: -0.00105223113, Δε: 0.00262292242, ε: 23.443569213 }

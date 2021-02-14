@@ -1,4 +1,4 @@
-import { JulianDay } from '../julian-day'
+import { JulianDay } from '../julian-day.js'
 
 console.log('JulianDay Testing Started')
 let errors = 0
