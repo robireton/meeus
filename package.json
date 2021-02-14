@@ -1,10 +1,14 @@
 {
   "name": "@robireton/meeus",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "ES6 implementations of algorithms from Astronomical Algorithms by Jean Meeus",
-  "main": "meeus.mjs",
+  "type": "module",
+  "engines": {
+    "node": ">=13.2.0"
+  },
+  "main": "meeus.js",
   "scripts": {
-    "test": "node --experimental-modules tests/jd.mjs && node --experimental-modules tests/nut-obl.mjs"
+    "test": "node tests/jd.js && node tests/nut-obl.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +21,7 @@
   },
   "homepage": "https://github.com/robireton/meeus#readme",
   "dependencies": {
-    "@robireton/circle": "^1.1.1",
-    "@robireton/delta-t": "^1.0.0"
+    "@robireton/circle": "^1.2.1",
+    "@robireton/delta-t": "^1.1.0"
   }
 }

@@ -1,7 +1,7 @@
 import circle from '@robireton/circle'
-import JulianEphemerisDay from './julian-day'
-import calculateNutationAndObliquity from './nutation-obliquity'
-import earthVSOP87D from './vsop87d-earth'
+import JulianEphemerisDay from './julian-day.js'
+import calculateNutationAndObliquity from './nutation-obliquity.js'
+import earthVSOP87D from './vsop87d-earth.js'
 
 export function positionSun (date, lat, lon) {
   const JDE = JulianEphemerisDay(date)
